@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>IT3212 | Destry Amiott</title>
+    <meta name="description" content="A simple project created for IT3212" />
+    <meta name="author" content="Destry Amiott" />
+
+    <meta property="og:description" content="A simple site created for IT3212" />
+
+    <link rel="icon" href="./favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,200&display=swap" rel="stylesheet" />
+    <!-- Bootstrap below is only for containers. -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li class="active"><a href="/index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li class="nav-icon">
+          <div style="text-align: center">
+            <img src="./logo.png" alt="website logo header" style="display: inline-block; height: 55px; " />
+
+          </div>
+        </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <section class="container">
+<!--
+        This is the opening section that just gives the users some quick at-a-glance information that describes
+          a little about the company.
+ -->
+        <article>
+          <header>
+            <h3 class="header-text">
+              We are a group of talented web developers that create
+              <br />
+              <span style="margin: 0.5em 0 0 0">fast, scalable, and secure websites for a variety of clients</span>
+            </h3>
+          </header>
+          <div style="margin: 4em 0 0 3em">
+            <p>We believe in creating simple, mobile first websites that are quick to load for users and easy on their resources.</p>
+            <p>We stick to tried and true methods using as little client-side script as possible</p>
+          </div>
+        </article>
+      </section>
+
+      <section>
+<!--
+        A contact section to catch the user - or potential clients eye. This section contains a link that is stylized
+          to look like a button.
+-->
+        <div class="home-contact">
+          <article class="contact-article">
+            <header>
+              <h1>Want to learn more?</h1>
+            </header>
+            <div class="contact-article-text">
+              <p>Let's chat! We love learning about what people are working on and finding inspiration in the most mundane things.</p>
+
+              <a class="btn contact-chat-button" href="./contact.html">Let's Chat!</a>
+
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Made with ❤ by Destry Amiott for IT 3212
+        <br>
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </span>
+
+    </footer>
+  </body>
+</html>
