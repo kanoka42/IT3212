@@ -27,73 +27,45 @@
   </head>
 
   <body>
-    <div>
-      <nav>
+    <div class="hero-image">
+      <nav class="container">
         <ul>
-          <li class="active"><a href="/index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li class="nav-icon">
-          <div style="text-align: center">
-            <img src="./logo.png" alt="website logo header" style="display: inline-block; height: 55px; " />
 
-          </div>
-        </li>
-          <li><a href="#">Contact</a></li>
+          <li class="logo-home">L — W</li>
+
+          <li class="nav-right"><a href="./contact.html">Contact</a></li>
+          <li class="nav-right"><a href="./services.html">Services</a></li>
+          <li class="nav-right"><a href="./gallery.html">Gallery</a></li>
+          <li class="nav-right"><a href="./about.html">About</a></li>
+          <li class="active nav-right"><a href="./index.html">Home</a></li>
+
         </ul>
       </nav>
+
+      <main>
+        <section>
+          <div class="hero-text">
+            <h1>LILY WATSON</h1>
+            <article>
+              <h3>LANDSCAPE PHOTOGRAPHER</h3>
+            </article>
+          </div>
+        </section>
+      </main>
     </div>
 
-    <main>
-      <section class="container">
-<!--
-        This is the opening section that just gives the users some quick at-a-glance information that describes
-          a little about the company.
- -->
-        <article>
-          <header>
-            <h3 class="header-text">
-              We are a group of talented web developers that create
-              <br />
-              <span style="margin: 0.5em 0 0 0">fast, scalable, and secure websites for a variety of clients</span>
-            </h3>
-          </header>
-          <div style="margin: 4em 0 0 3em">
-            <p>We believe in creating simple, mobile first websites that are quick to load for users and easy on their resources.</p>
-            <p>We stick to tried and true methods using as little client-side script as possible</p>
-          </div>
-        </article>
-      </section>
-
-      <section>
-<!--
-        A contact section to catch the user - or potential clients eye. This section contains a link that is stylized
-          to look like a button.
--->
-        <div class="home-contact">
-          <article class="contact-article">
-            <header>
-              <h1>Want to learn more?</h1>
-            </header>
-            <div class="contact-article-text">
-              <p>Let's chat! We love learning about what people are working on and finding inspiration in the most mundane things.</p>
-
-              <a class="btn contact-chat-button" href="./contact.html">Let's Chat!</a>
-
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <span>Made with ❤ by Destry Amiott for IT 3212
+    <footer class="footer" style="font-weight: 600">
+      <div style="text-align: center">
+      <span>Made with ❤ by Destry Amiott for IT 3212</span>
         <br>
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-      </span>
+        <span>
+          Image taken by <span class="active"><a target="_blank" href="https://unsplash.com/@worldsbetweenlines">@worldsbetweenlines</a> </span> &copy;
+          <script>document.write(new Date().getFullYear())</script>
+        </span>
+      </div>
 
     </footer>
+
+
   </body>
 </html>
