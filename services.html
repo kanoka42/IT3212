@@ -27,24 +27,84 @@
 </head>
 
 <body>
-<div class="hero-image">
+<div>
   <nav class="container">
     <ul>
 
       <li class="logo-home">L — W</li>
 
       <li class="nav-right"><a href="./contact.html">Contact</a></li>
-      <li class="nav-right"><a href="./services.html">Services</a></li>
+      <li class="active nav-right"><a href="./services.html">Services</a></li>
       <li class="nav-right"><a href="./gallery.html">Gallery</a></li>
       <li class="nav-right"><a href="./about.html">About</a></li>
-      <li class="active nav-right"><a href="./index.html">Home</a></li>
+      <li class="nav-right"><a href="./index.html">Home</a></li>
 
     </ul>
   </nav>
 
-  <main>
+  <main class="container footerMargin">
     <section>
+      <div class="row">
+        <h2 class="aboutHeader" style="margin: 25px" >About My Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin auctor est mollis maximus. Etiam scelerisque posuere risus eget condimentum. Aliquam ac molestie nunc, at tristique nibh. Sed lobortis eros eu odio tincidunt volutpat. Proin neque neque, consectetur quis tincidunt ac, tempus vitae est. Nulla quis consequat libero, nec malesuada erat. Aenean sed dignissim nisl. Mauris vitae tincidunt tellus. Aliquam eget ante maximus, euismod massa non, sollicitudin massa. </p>
+        <!--    Dynamic width col for mobile ready devices    -->
+          <div class="col">
+            <div class="row">
+              <div class="serviceImageContainer">
+                <img class="serviceImages" src="./images/services1.jpeg" alt="perfect-portrait-for-you">
+                <span>
+                  <!--        Force override for link color over images, annoying, but simplest method right now         -->
+                  <a target="_blank" href="https://unsplash.com/@baileyzindel">
+                    <span class="serviceImageText" style=" color: #fff ">@baileyzindel</span>
+                  </a>
+                </span>
+              </div>
+              <h3 class="serviceSubImageHeader">THE PERFECT IMAGE FOR YOU</h3>
+              <p class="serviceSubImageText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin auctor est mollis maximus. Etiam scelerisque posuere risus eget condimentum.</p>
+            </div>
 
+            <div class="row">
+              <div class="serviceImageContainer">
+                <img class="serviceImages" src="./images/services3.jpeg" alt="photography-workshops">
+                <span>
+                  <a target="_blank" href="https://unsplash.com/@luckybeanz">
+                    <span class="serviceImageText" style=" color: #fff ">@luckybeanz</span>
+                  </a>
+                </span>
+              </div>
+              <h3 class="serviceSubImageHeader">PHOTOGRAPHY WORKSHOPS</h3>
+              <p class="serviceSubImageText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin auctor est mollis maximus. Etiam scelerisque posuere risus eget condimentum.</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="row">
+              <div class="serviceImageContainer">
+                <img class="serviceImages" src="./images/services2.jpeg" alt="Landscape-scouting">
+                <span>
+                  <a target="_blank" href="https://unsplash.com/@franz_nawrath">
+                    <span class="serviceImageText" style=" color: #fff ">@franz_nawrath</span>
+                  </a>
+                </span>
+              </div>
+              <h3 class="serviceSubImageHeader">LANDSCAPE SCOUTING</h3>
+              <p class="serviceSubImageText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin auctor est mollis maximus. Etiam scelerisque posuere risus eget condimentum.</p>
+            </div>
+
+            <div class="row">
+              <div class="serviceImageContainer">
+                <img class="serviceImages" src="./images/services4.jpeg" alt="portfolio-review">
+                <span>
+                  <a target="_blank" href="https://unsplash.com/@timtied">
+                    <span class="serviceImageText" style=" color: #fff ">@timtied</span>
+                  </a>
+                </span>
+              </div>
+              <h3 class="serviceSubImageHeader">PORTFOLIO REVIEWS</h3>
+              <p class="serviceSubImageText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin auctor est mollis maximus. Etiam scelerisque posuere risus eget condimentum.</p>
+            </div>
+        </div>
+      </div>
     </section>
   </main>
 </div>
@@ -54,7 +114,7 @@
     <span>Made with ❤ by Destry Amiott for IT 3212</span>
     <br>
     <span>
-          Image taken by <span class="active"><a target="_blank" href="https://unsplash.com/@worldsbetweenlines">@worldsbetweenlines</a> </span> &copy;
+           &copy;
           <script>document.write(new Date().getFullYear())</script>
         </span>
   </div>

@@ -5,28 +5,38 @@ body, html {
 
 body {
   margin: 0;
-  color: #fff;
+  color: #2b2d42;
   font-family: "Raleway", sans-serif;
-  background-color: #2B2D42;
+  background-color: #edf2f4;
 }
+
 a {
-  color: rgb(241, 250, 238);
+  color: #2b2d42;
   text-decoration: none;
+}
+
+.footerMargin {
+  margin-bottom: 100px;
 }
 
 .active a {
-  color: rgb(230, 57, 70);
+  color: rgb(138, 48, 48);
 }
 
 .active a:hover {
-  color: rgb(230, 57, 70);
+  color: rgb(138, 48, 48);
   border-bottom: none;
 }
 
-a:hover {
-  color: rgb(241, 250, 238);
-  border-bottom: solid 3px rgb(230, 57, 70);
-  text-decoration: none;
+a:not(.noHover):hover {
+  color: #2b2d42;
+  border-bottom: solid 3px rgb(138, 48, 48);
+  /*text-decoration: none;*/
+}
+
+.noHover:hover {
+  color: #2b2d42;
+
 }
 
 
@@ -69,7 +79,7 @@ ul {
 }
 
 .logo-home {
-  color: rgb(230, 57, 70);
+  color: rgb(138, 48, 48);
   font-size: 24px;
   letter-spacing: 0.05em;
   float: left;
@@ -88,12 +98,12 @@ ul {
   position: fixed;
   width: 100%;
   bottom: 0;
-  color: #fff;
+  color: #2b2d42;
 }
 
 .aboutHeader {
   font-weight: 300;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.05em;
   margin: 50px;
 }
 
@@ -124,9 +134,119 @@ ul {
   padding: 0;
 }
 
+.disabled {
+  pointer-events: none;
+}
+
 .dateText {
   font-size: 14px;
   color: #D90429;
   /*letter-spacing: 0.1em;*/
 }
 
+
+.serviceImageContainer {
+  position: relative;
+  text-align: center;
+}
+
+
+.serviceImageText {
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+}
+
+.serviceImageText:hover {
+  border-bottom: #ce935c 3px solid;
+}
+
+.serviceImages {
+  width: 500px;
+  max-height: 300px;
+  border-radius: 30px;
+  margin: 50px 50px 30px 50px;
+}
+
+.serviceSubImageHeader {
+  font-weight: 300;
+  text-align: center;
+}
+
+.serviceSubImageText {
+  width: 500px;
+  margin-left: 15%;
+}
+
+.contactForm {
+  width: 100%;
+  height: 600px;
+}
+
+.contactFormLeft {
+  padding: 50px;
+  background-color: #5cce93;
+}
+
+.infoItem {
+  display: inline-block;
+  width: 75%;
+  padding-left: 25px;
+
+}
+
+.contactFormLeftIcon {
+  font-size: 20px;
+}
+
+.contactFormRight {
+  margin: 50px;
+
+}
+
+/* Floating Labels*/
+.user-input-wrp {
+  display: inline-block;
+  position: relative;
+  /*max-width: 50%;*/
+}
+.inputText{
+  width: 100%;
+  background-color: #edf2f4;
+  outline: none;
+  border:none;
+  border-bottom: 1px solid #777;
+  box-shadow: none !important;
+}
+.inputText:focus{
+  border-color: #5cce93;
+  border-width: medium medium 2px;
+}
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 25px;
+  left: 13px;
+  opacity: 0.5;
+  transition: 0.2s ease all;
+}
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+  top: 0px;
+  left: 10px;
+  font-size: 13px;
+  opacity: 1;
+}
+
+textarea:focus ~ .floating-label,
+textarea:not(:focus):valid ~ .floating-label{
+  top: 0px;
+  left: 10px;
+  font-size: 13px;
+  opacity: 1;
+}
+
+
+.formRow {
+  margin: 25px 0 25px 25px
+}

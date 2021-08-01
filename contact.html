@@ -27,23 +27,102 @@
 </head>
 
 <body>
-<div class="hero-image">
+<div>
   <nav class="container">
     <ul>
 
       <li class="logo-home">L — W</li>
 
-      <li class="nav-right"><a href="./contact.html">Contact</a></li>
+      <li class="active nav-right"><a href="./contact.html">Contact</a></li>
       <li class="nav-right"><a href="./services.html">Services</a></li>
       <li class="nav-right"><a href="./gallery.html">Gallery</a></li>
       <li class="nav-right"><a href="./about.html">About</a></li>
-      <li class="active nav-right"><a href="./index.html">Home</a></li>
+      <li class="nav-right"><a href="./index.html">Home</a></li>
 
     </ul>
   </nav>
 
-  <main>
+  <main class="container" style="margin-top: 5%">
     <section>
+      <article>
+        <div class="row" style="background-color: #fff;border: 2px solid #5cce93;">
+          <div class="col-4 contactFormLeft">
+            <h2 style="text-align: center">Let's get in touch</h2>
+            <br>
+            <p>I'm open for any suggestions or willing to just have a chat!</p>
+            <div class="">
+              <ion-icon class="contactFormLeftIcon" name="location"></ion-icon>
+              <p class="infoItem">Address: 198 West 21st Street, Suite 602 New York, NY 10016</p>
+              <br>
+              <ion-icon class="contactFormLeftIcon" name="call"></ion-icon>
+              <p class="infoItem">Phone: +1 235 555 5555</p>
+              <br>
+              <ion-icon class="contactFormLeftIcon" name="paper-plane"></ion-icon>
+              <a class="noHover" href="mailto:damiott@capella.edu" >
+                <p class="infoItem" style="border-bottom: 1px #fff dashed ">Email: damiott@capella.edu</p>
+              </a>
+              <br>
+              <ion-icon class="contactFormLeftIcon" name="earth"></ion-icon>
+              <!--      This is hack, but I can't think of any other solution.        -->
+              <a class="noHover" target="_blank" href="https://kanoka42.github.io/IT3212/index.html" >
+                <p class="infoItem" style="border-bottom: 1px #fff dashed ">kanoka42.github.io</p>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="contactFormRight">
+              <h2>Send me a message!</h2>
+
+              <!--     Contact me form         -->
+              <form action="/submit.php">
+                <div class="row formRow">
+                  <div class="col">
+                    <div class="user-input-wrp">
+                      <br/>
+                      <input type="text" class="inputText" required/>
+                      <span class="floating-label">Your full name</span>
+                    </div>
+
+                  </div>
+
+
+                  <div class="col">
+                    <div class="user-input-wrp">
+                      <br/>
+                      <input type="text" class="inputText" required/>
+                      <span class="floating-label">Your email address</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row formRow">
+                  <div class="user-input-wrp">
+                    <br/>
+                    <input type="text" class="inputText" required/>
+                    <span class="floating-label">Message subject</span>
+                  </div>
+                </div>
+
+
+                <div class="row formRow">
+                  <div class="user-input-wrp">
+                    <br/>
+                    <textarea class="inputText" required></textarea>
+                    <span class="floating-label">Message</span>
+                  </div>
+                </div>
+
+                <button style="margin-left: 5%" type="button" class="btn btn-primary">Submit</button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+
+      </article>
 
     </section>
   </main>
@@ -54,13 +133,14 @@
     <span>Made with ❤ by Destry Amiott for IT 3212</span>
     <br>
     <span>
-          Image taken by <span class="active"><a target="_blank" href="https://unsplash.com/@worldsbetweenlines">@worldsbetweenlines</a> </span> &copy;
+          &copy;
           <script>document.write(new Date().getFullYear())</script>
         </span>
   </div>
 
 </footer>
 
-
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
