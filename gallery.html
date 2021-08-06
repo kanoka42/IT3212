@@ -16,18 +16,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,200&display=swap" rel="stylesheet" />
   <!-- Bootstrap below is only for containers. -->
-  <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
+
 
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-<div class="hero-image">
+<div>
   <nav class="container">
     <ul>
 
@@ -35,32 +34,176 @@
 
       <li class="nav-right"><a href="./contact.html">Contact</a></li>
       <li class="nav-right"><a href="./services.html">Services</a></li>
-      <li class="nav-right"><a href="./gallery.html">Gallery</a></li>
+      <li class="active nav-right"><a href="./gallery.html">Gallery</a></li>
       <li class="nav-right"><a href="./about.html">About</a></li>
-      <li class="active nav-right"><a href="./index.html">Home</a></li>
+      <li class="nav-right"><a href="./index.html">Home</a></li>
 
     </ul>
   </nav>
 
-  <main>
+  <main class="container overflow-hidden">
     <section>
+
+      <div class="row gx-3" style="margin-top: 2%">
+        <div class="col">
+          <a style="border-bottom: none" href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-credit="@adamkool" data-bs-image="./images/gallery1.jpeg">
+            <img class="img-thumbnail rounded mx-auto d-block galleryImages" src="images/gallery1.jpeg" alt="image1"/>
+          </a>
+        </div>
+        <div class="col">
+          <a style="border-bottom: none" href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-credit="@timswaanphotography" data-bs-image="./images/gallery2.jpeg">
+            <img class="img-thumbnail rounded mx-auto d-block galleryImages" src="images/gallery2.jpeg" alt="image2"/>
+          </a>
+        </div>
+        <div class="col">
+          <a style="border-bottom: none" href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-credit="@jaymantri" data-bs-image="./images/gallery3.jpeg">
+            <img class="img-thumbnail rounded mx-auto d-block galleryImages" src="images/gallery3.jpeg" alt="image3"/>
+          </a>
+        </div>
+        <div class="col">
+          <a style="border-bottom: none" href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-credit="@robertlukeman" data-bs-image="./images/gallery4.jpeg">
+            <img class="img-thumbnail rounded mx-auto d-block galleryImages" src="images/gallery4.jpeg" alt="image4"/>
+          </a>
+        </div>
+      </div>
+
+      <div class="row gx-3" style="margin-top: 2%">
+        <div class="col">
+          <a style="border-bottom: none" href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-credit="@niko_photos" data-bs-image="./images/gallery5.jpeg">
+            <img class="img-thumbnail rounded mx-auto d-block galleryImages" src="images/gallery5.jpeg" alt="image5"/>
+          </a>
+        </div>
+        <div class="col">
+          <a style="border-bottom: none" href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-credit="@lucabravo" data-bs-image="./images/gallery6.jpeg">
+            <img class="img-thumbnail rounded mx-auto d-block galleryImages" src="images/gallery6.jpeg" alt="image6"/>
+          </a>
+        </div>
+        <div class="col">
+          <a style="border-bottom: none" href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-credit="@onefabian" data-bs-image="./images/gallery7.jpeg">
+            <img class="img-thumbnail rounded mx-auto d-block galleryImages" src="images/gallery7.jpeg" alt="image7"/>
+          </a>
+        </div>
+        <div class="col">
+          <a style="border-bottom: none" href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-credit="@montylov" data-bs-image="./images/gallery8.jpeg">
+            <img class="img-thumbnail rounded mx-auto d-block galleryImages" src="images/gallery8.jpeg" alt="image8"/>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+      <div class="movieContainer">
+        <div class="col">
+          <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="dQw4w9WgXcQ"></div>
+        </div>
+      </div>
+
+        <div  class="movieContainer col">
+          <audio id="audio">
+            <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.mp3" type="audio/mp3">
+            <source src="https://cdn.plyr.io/static/demo/Kishi_Bashi_-_It_All_Began_With_a_Burst.ogg" type="audio/ogg">
+          </audio>
+          <span>
+            Music provided by <a target="_blank" href="https://www.youtube.com/watch?v=r0uUaLQr-gU">Kishi Bashi </a>
+          </span>
+        </div>
+      </div>
+
+
+
+      <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="imageHolder">
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div id="footerCredit">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </section>
   </main>
+
 </div>
 
 <footer class="footer" style="font-weight: 600">
   <div style="text-align: center">
     <span>Made with ❤ by Destry Amiott for IT 3212</span>
     <br>
-    <span>
-          Image taken by <span class="active"><a target="_blank" href="https://unsplash.com/@worldsbetweenlines">@worldsbetweenlines</a> </span> &copy;
+     &copy;
           <script>document.write(new Date().getFullYear())</script>
-        </span>
+
   </div>
 
 </footer>
 
 
+<script>
+
+  let imageModal = document.getElementById('imageModal');
+
+
+  // Create a new image element and insert into the DOM
+  imageModal.addEventListener('show.bs.modal', function (event) {
+    // Link that triggered the update
+    let button = event.relatedTarget
+    // Extract info from data-bs-* attributes
+    let recipient = button.getAttribute('data-bs-image')
+
+    // Insert new image
+    let newImage = document.createElement("img");
+    newImage.src = recipient;
+    newImage.id= "autoImage"
+    newImage.className= "img-fluid";
+
+    // Insert new link
+    let newLink = document.createElement("a");
+    newLink.href = `https://unsplash.com/${button.getAttribute('data-bs-credit')}`;
+    newLink.innerText = `Image taken by: ${button.getAttribute('data-bs-credit')}`;
+    newLink.target = "_blank";
+    newLink.id = "autoLink";
+
+    // Update the modal's content.
+    document.getElementById("imageHolder").appendChild(newImage);
+    document.getElementById("footerCredit").appendChild(newLink);
+
+
+
+  });
+
+  // Remove the auto created child elem to prevent duplicate images, stacked images, duplicate links, or other issues.
+  imageModal.addEventListener('hidden.bs.modal', function(event) {
+    let image = document.getElementById("autoImage");
+    image.remove();
+
+    let link = document.getElementById("autoLink");
+    link.remove();
+  });
+
+</script>
+
+<script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+<script>
+  const player = new Plyr('#player', {});
+  // Expose player so it can be used from the console
+  window.player = player;
+
+  const audioPlayer = new Plyr("#audio", {});
+
+  window.player = audioPlayer;
+
+
+</script>
 </body>
 </html>

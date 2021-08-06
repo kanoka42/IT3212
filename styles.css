@@ -232,7 +232,7 @@ ul {
 }
 input:focus ~ .floating-label,
 input:not(:focus):valid ~ .floating-label{
-  top: 0px;
+  top: 0;
   left: 10px;
   font-size: 13px;
   opacity: 1;
@@ -240,13 +240,39 @@ input:not(:focus):valid ~ .floating-label{
 
 textarea:focus ~ .floating-label,
 textarea:not(:focus):valid ~ .floating-label{
-  top: 0px;
+  top: 0;
   left: 10px;
   font-size: 13px;
   opacity: 1;
 }
 
-
 .formRow {
   margin: 25px 0 25px 25px
+}
+
+.galleryImageContainer {
+  position: relative;
+  text-align: center;
+}
+
+
+.galleryImageText:hover {
+  border-bottom: #ce935c 3px solid;
+}
+
+.galleryImages {
+  border: none;
+  padding: 0;
+}
+
+.movieContainer {
+  max-width: 500px;
+  margin-bottom: 4%;
+  margin-top: 2%;
+
+}
+
+.audioPlayer {
+  margin-top: 2%;
+  max-width: 500px;
 }
